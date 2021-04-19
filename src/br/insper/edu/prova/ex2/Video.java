@@ -30,7 +30,7 @@ public class Video {
 	}
 	
 	public void adicionaAvaliacao(Usuario user, Integer nota) {
-		if ((nota<=5)&&(nota>=1)) {
+		if ((nota<=5)&&(nota>=1)&&(user.getNome()!=usuario.getNome())) {
 			this.avaliacoes.put(user, nota);
 		}
 	}
