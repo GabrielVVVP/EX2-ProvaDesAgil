@@ -17,8 +17,7 @@ public class Usuario {
 	}
 	
 	public Video postaVideo(Integer identificador, Produto produto) {
-		Usuario user = new Usuario("Joao"); 
-		Video videoNovo = new Video(identificador,user,produto);
+		Video videoNovo = new Video(identificador,this,produto);
 		this.videos.add(videoNovo);
 		return videoNovo;
 	}
